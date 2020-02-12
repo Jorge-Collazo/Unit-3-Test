@@ -6,29 +6,67 @@ body{
     vertical-align: middle;
 }
 html{
-    background: radial-gradient( aqua, teal, black);
+    animation: ripple 3s infinite ease-out;
     color: white;
     height: 100%;
     text-align: center;
 }
 input{
-    background-color: rgb(233, 164, 16);
-    color: indigo;
-    border: 2px solid  indigo;
-    box-shadow: indigo 3px 3px 3px;
-    
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    border: 2px solid  black;
+    box-shadow: black 3px 3px 3px;
 }
-
+input:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border: 2px solid  black;
+    box-shadow: black 3px 3px 3px;
+    transition: 1s;
+}
 button{
-    background-color: rgb(219, 146, 50);
-    color:  (41, 23, 0);
+    background-color: rgb(255, 255, 255);
+    color:  rgb(0, 0, 0);
     border: 2px solid  black;
     margin: 2px;
     font-size: 15px;
-    box-shadow: indigo 3px 3px 3px;
+    box-shadow: black 3px 3px 3px;
+}
+button:hover{
+    background-color: rgb(0, 0, 0);
+    color:  rgb(255, 255, 255);
+    border: 2px solid  rgb(255, 255, 255);
+    margin: 2px;
+    font-size: 15px;
+    box-shadow: rgb(255, 255, 255) 3px 3px 3px;
+    transform: scale(1.2);
+    transition: 1s;
 }
 form, p{
-    color:rgb(236, 178, 71);
+    color:rgb(0, 0, 0);
     font-size: 20px;
-    text-shadow: black 2px 2px 2px;
+    text-shadow: rgb(211, 211, 211) 2px 2px 2px;
+}
+
+@keyframes ripple{
+    5%{background: linear-gradient(35deg, rgb(0, 135, 224),rgb(52, 174, 255),rgb(127, 193, 255), rgb(187, 224, 255), rgb(207, 241, 255));}
+    10%{background: linear-gradient(35deg, rgb(207, 241, 255), rgb(0, 135, 224),rgb(52, 174, 255),rgb(127, 193, 255), rgb(187, 224, 255));}
+    15%{background: linear-gradient(35deg, rgb(187, 224, 255),rgb(207, 241, 255), rgb(0, 135, 224),rgb(52, 174, 255),rgb(127, 193, 255));}
+    20%{background: linear-gradient(35deg, rgb(127, 193, 255),rgb(187, 224, 255),rgb(207, 241, 255), rgb(0, 135, 224),rgb(52, 174, 255));}
+    25%{background: linear-gradient(35deg, rgb(52, 174, 255),rgb(127, 193, 255), rgb(187, 224, 255), rgb(207, 241, 255), rgb(0, 135, 224));}
+    30%{background: linear-gradient(35deg, rgb(0, 135, 224),rgb(52, 174, 255),rgb(127, 193, 255), rgb(187, 224, 255), rgb(207, 241, 255));}
+    35%{background: linear-gradient(35deg, rgb(207, 241, 255), rgb(0, 135, 224),rgb(52, 174, 255),rgb(127, 193, 255), rgb(187, 224, 255));}
+    40%{background: linear-gradient(35deg, rgb(187, 224, 255),rgb(207, 241, 255), rgb(0, 135, 224),rgb(52, 174, 255),rgb(127, 193, 255));}
+    45%{background: linear-gradient(35deg, rgb(127, 193, 255),rgb(187, 224, 255),rgb(207, 241, 255), rgb(0, 135, 224),rgb(52, 174, 255));}
+    50%{background: linear-gradient(35deg, rgb(52, 174, 255),rgb(127, 193, 255), rgb(187, 224, 255), rgb(207, 241, 255), rgb(0, 135, 224));}
+    55%{background: linear-gradient(35deg, rgb(0, 135, 224),rgb(52, 174, 255),rgb(127, 193, 255), rgb(187, 224, 255), rgb(207, 241, 255));}
+    60%{background: linear-gradient(35deg, rgb(207, 241, 255), rgb(0, 135, 224),rgb(52, 174, 255),rgb(127, 193, 255), rgb(187, 224, 255));}
+    65%{background: linear-gradient(35deg, rgb(187, 224, 255),rgb(207, 241, 255), rgb(0, 135, 224),rgb(52, 174, 255),rgb(127, 193, 255));}
+    70%{background: linear-gradient(35deg, rgb(127, 193, 255),rgb(187, 224, 255),rgb(207, 241, 255), rgb(0, 135, 224),rgb(52, 174, 255));}
+    75%{background: linear-gradient(35deg, rgb(52, 174, 255),rgb(127, 193, 255), rgb(187, 224, 255), rgb(207, 241, 255), rgb(0, 135, 224));}
+    80%{background: linear-gradient(35deg, rgb(0, 135, 224),rgb(52, 174, 255),rgb(127, 193, 255), rgb(187, 224, 255), rgb(207, 241, 255));}
+    85%{background: linear-gradient(35deg, rgb(207, 241, 255), rgb(0, 135, 224),rgb(52, 174, 255),rgb(127, 193, 255), rgb(187, 224, 255));}
+    90%{background: linear-gradient(35deg, rgb(187, 224, 255),rgb(207, 241, 255), rgb(0, 135, 224),rgb(52, 174, 255),rgb(127, 193, 255));}
+    95%{background: linear-gradient(35deg, rgb(127, 193, 255),rgb(187, 224, 255),rgb(207, 241, 255), rgb(0, 135, 224),rgb(52, 174, 255));}
+    100%{background: linear-gradient(35deg, rgb(52, 174, 255),rgb(127, 193, 255), rgb(187, 224, 255), rgb(207, 241, 255), rgb(0, 135, 224));}
 }
