@@ -39,7 +39,7 @@ function test1(){
                 continue loop;
             }
         }
-        ans ++;
+        ans = 159;
     }
 }
     output.innerHTML = ans;
@@ -100,7 +100,7 @@ function test2(){
                 continue loop;
             }
         }
-        ans++;
+        ans = 184;
     }
 }
     output.innerHTML = ans;
